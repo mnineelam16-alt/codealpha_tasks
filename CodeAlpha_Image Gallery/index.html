@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Curated visual stories</p>
+        <h1>Explore a modern image gallery</h1>
+        <p>
+          Browse stunning photography, switch categories, and open each frame in a
+          smooth lightbox experience.
+        </p>
+      </header>
+
+      <section class="toolbar" aria-label="Gallery controls">
+        <div class="filter-group" id="filters">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="landscape">Landscape</button>
+          <button class="filter-button" data-filter="city">City</button>
+          <button class="filter-button" data-filter="portrait">Portrait</button>
+        </div>
+        <p class="counter" id="galleryCount">Showing 6 photos</p>
+      </section>
+
+      <section class="gallery-grid" id="galleryGrid">
+        <article class="gallery-card featured-card" data-category="landscape" data-title="Golden Hour Ridge" data-description="A vivid overlook warmed by the setting sun." data-image="images/golden-hour-ridge.jpg">
+          <img src="images/golden-hour-ridge.jpg" alt="Golden Hour Ridge" />
+          <div class="card-content">
+            <h2>Golden Hour Ridge</h2>
+            <p>Warm light across a dramatic mountain crest.</p>
+            <button type="button" class="view-button">View</button>
+          </div>
+        </article>
+
+        <article class="gallery-card tall-card" data-category="city" data-title="Midnight Skyline" data-description="Neon reflections dance along glass towers at night." data-image="images/midnight-skyline.jpg">
+          <img src="images/midnight-skyline.jpg" alt="Midnight Skyline" />
+          <div class="card-content">
+            <h2>Midnight Skyline</h2>
+            <p>City lights stacked into a cinematic horizon.</p>
+            <button type="button" class="view-button">View</button>
+          </div>
+        </article>
+
+        <article class="gallery-card portrait-card" data-category="portrait" data-title="Lively Street Portrait" data-description="A bright, energetic portrait with playful color and movement." data-image="images/lively-street-portrait.jpg">
+          <img src="images/lively-street-portrait.jpg" alt="Lively Street Portrait" />
+          <div class="card-content">
+            <h2>Soft Focus Portrait</h2>
+            <p>Atmospheric portrait work with expressive details.</p>
+            <button type="button" class="view-button">View</button>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="landscape" data-title="Coastal Drift" data-description="Sea mist and cliffs in a tranquil coastal scene." data-image="images/coastal-drift.jpg">
+          <img src="images/coastal-drift.jpg" alt="Coastal Drift" />
+          <div class="card-content">
+            <h2>Coastal Drift</h2>
+            <p>Scenic shoreline with layered blues and motion.</p>
+            <button type="button" class="view-button">View</button>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="city" data-title="Rainy Alleyways" data-description="Umbrellas and reflections pulse through a quiet street." data-image="images/rainy-alleyways.jpg">
+          <img src="images/rainy-alleyways.jpg" alt="Rainy Alleyways" />
+          <div class="card-content">
+            <h2>Rainy Alleyways</h2>
+            <p>Urban texture and color in a moody frame.</p>
+            <button type="button" class="view-button">View</button>
+          </div>
+        </article>
+
+        <article class="gallery-card portrait-card" data-category="portrait" data-title="Color Pop Portrait" data-description="A bold portrait full of expressive color and confidence." data-image="images/color-pop-portrait.jpg">
+          <img src="images/color-pop-portrait.jpg" alt="Color Pop Portrait" />
+          <div class="card-content">
+            <h2>Studio Glow</h2>
+            <p>Bold tones and confident expression in studio light.</p>
+            <button type="button" class="view-button">View</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+      <button class="lightbox-nav prev" id="prevBtn" aria-label="Previous image">‹</button>
+      <div class="lightbox-media">
+        <img id="lightboxImage" src="" alt="" />
+        <div class="lightbox-caption">
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxText"></p>
+        </div>
+      </div>
+      <button class="lightbox-nav next" id="nextBtn" aria-label="Next image">›</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

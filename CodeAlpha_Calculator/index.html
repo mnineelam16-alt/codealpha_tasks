@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="calculator" role="application" aria-label="Calculator">
+      <header class="calculator__header">
+        <h1 class="visually-hidden">Calculator</h1>
+      </header>
+
+      <div class="calculator__screen">
+        <input
+          id="display"
+          class="calculator__display"
+          type="text"
+          value="0"
+          readonly
+          aria-label="Calculator display"
+        />
+        <div id="preview" class="calculator__preview" aria-hidden="true"></div>
+      </div>
+
+      <section class="calculator__keys" role="group" aria-label="Calculator keys">
+        <div class="row">
+          <button type="button" class="btn btn--function" data-action="clear">C</button>
+          <button type="button" class="btn btn--function" data-action="backspace">⌫</button>
+          <button type="button" class="btn btn--operator" data-action="percent">%</button>
+          <button type="button" class="btn btn--operator" data-action="divide">÷</button>
+        </div>
+
+        <div class="row">
+          <button type="button" class="btn btn--number" data-value="7">7</button>
+          <button type="button" class="btn btn--number" data-value="8">8</button>
+          <button type="button" class="btn btn--number" data-value="9">9</button>
+          <button type="button" class="btn btn--operator" data-action="multiply">×</button>
+        </div>
+
+        <div class="row">
+          <button type="button" class="btn btn--number" data-value="4">4</button>
+          <button type="button" class="btn btn--number" data-value="5">5</button>
+          <button type="button" class="btn btn--number" data-value="6">6</button>
+          <button type="button" class="btn btn--operator" data-action="subtract">−</button>
+        </div>
+
+        <div class="row">
+          <button type="button" class="btn btn--number" data-value="1">1</button>
+          <button type="button" class="btn btn--number" data-value="2">2</button>
+          <button type="button" class="btn btn--number" data-value="3">3</button>
+          <button type="button" class="btn btn--operator" data-action="add">+</button>
+        </div>
+
+        <div class="row">
+          <button type="button" class="btn btn--number btn--wide" data-value="0">0</button>
+          <button type="button" class="btn btn--function" data-action="decimal">.</button>
+          <button type="button" class="btn btn--equals" data-action="calculate">=</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neelam Latif | Portfolio</title>
+    <meta
+      name="description"
+      content="Professional portfolio for Neelam Latif, showcasing skills, projects, resume, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#home" class="brand">Neelam Latif</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+          <span class="theme-toggle__icon">☀️</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="home">
+      
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Software Development & Mobile App Enthusiast</p>
+            <h1>Crafting practical software solutions with curiosity and purpose.</h1>
+            <p>
+              I am Neelam Latif, a computer science student passionate about building mobile apps, learning modern development tools, and turning ideas into reliable digital experiences.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Let’s Connect</a>
+            </div>
+            <div class="hero-badges">
+              <span>Flutter</span>
+              <span>Android Studio</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="avatar">NL</div>
+            <h3>Focused on creating meaningful digital experiences</h3>
+            <ul>
+              <li>Mobile app development</li>
+              <li>Software design and problem solving</li>
+              <li>Database-backed applications</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+     
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>Driven by learning, design thinking, and clean code.</h2>
+          </div>
+          <div class="about-content reveal">
+            <p>
+              I am an ambitious student focused on software engineering and mobile application development. I enjoy exploring new technologies, understanding user needs, and building applications that are practical, scalable, and easy to use.
+            </p>
+            <p>
+              My interests span Flutter, Android development, object-oriented design, databases, and AI-driven problem solving. I am especially motivated by projects that combine real-world impact with thoughtful engineering.
+            </p>
+            <div class="stats">
+              <div>
+                <strong>6th</strong>
+                <span>Semester Complete</span>
+              </div>
+              <div>
+                <strong>3.55</strong>
+                <span>CGPA</span>
+              </div>
+              <div>
+                <strong>4+</strong>
+                <span>Core Tech Areas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="skills" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Technical strength across development, design, and databases.</h2>
+          </div>
+          <div class="skill-list reveal">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">Android Studio</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">OOD</span>
+            <span class="skill-tag">AI</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">XAMPP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work that reflects my growth as a developer.</h2>
+          </div>
+
+          <div class="filter-bar reveal" role="toolbar" aria-label="Project filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="flutter">Flutter</button>
+            <button class="filter-btn" data-filter="php">PHP</button>
+            <button class="filter-btn" data-filter="firebase">Firebase</button>
+          </div>
+
+          <div class="card-grid project-grid">
+            <article class="project-card reveal" data-tech="flutter firebase">
+              <h3>Habit Tracker App</h3>
+              <p>
+                A mobile application designed to help users build and maintain healthy routines through daily check-ins, streak tracking, and reminders.
+              </p>
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Firebase</span>
+              </div>
+              <button class="detail-toggle" type="button" aria-expanded="false">View Project Details</button>
+              <div class="project-details">
+                <p>Focused on user-friendly interface design, habit logging, persistence, and simple notifications to support engagement.</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-tech="php mysql">
+              <h3>Student Management System</h3>
+              <p>
+                A web-based system for managing student records, academic information, and basic reporting workflows with a clean interface.
+              </p>
+              <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>XAMPP</span>
+              </div>
+              <button class="detail-toggle" type="button" aria-expanded="false">View Project Details</button>
+              <div class="project-details">
+                <p>Built to strengthen backend logic, database design, and CRUD operations with practical data handling.</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-tech="flutter dart">
+              <h3>Study Planner App</h3>
+              <p>
+                A planner application that helps students organize tasks, prioritize deadlines, and monitor weekly progress with a simple visual layout.
+              </p>
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>UI/UX</span>
+              </div>
+              <button class="detail-toggle" type="button" aria-expanded="false">View Project Details</button>
+              <div class="project-details">
+                <p>Highlights planning, state management, and iterative design improvements to create a practical study companion.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="resume" class="section alt-bg">
+        <div class="container education-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Resume</p>
+            <h2>Summary of academic background and technical strengths.</h2>
+          </div>
+          <div class="education-card reveal">
+            <h3>BS Computer Science</h3>
+            <p><strong>CGPA:</strong> 3.55/4.0</p>
+            <p><strong>Semester:</strong> 6 Completed</p>
+            <p>Focused on modern software development principles, problem solving, and applied technology learning.</p>
+            <div class="hero-actions" style="margin-top: 1rem;">
+              <a class="btn btn-primary" href="resume.txt" download>Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="coursework" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Relevant Coursework</p>
+            <h2>Courses that support my technical growth.</h2>
+          </div>
+          <div class="card-grid course-grid reveal">
+            <article class="info-card">
+              <h3>Programming Fundamentals</h3>
+              <p>Core concepts in problem solving, algorithms, and structured coding.</p>
+            </article>
+            <article class="info-card">
+              <h3>Object-Oriented Design</h3>
+              <p>Understanding classes, objects, relationships, and maintainable software design.</p>
+            </article>
+            <article class="info-card">
+              <h3>Database Systems</h3>
+              <p>Hands-on learning in database modeling, queries, and data organization.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="contact" class="section alt-bg">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect and build something meaningful.</h2>
+            <p>
+              I’m always interested in meaningful collaborations, professional opportunities, and projects that make a difference.
+            </p>
+            <ul>
+              <li>Email: <a href="mailto:latifneelam26@gmail.com">latifneelam26@gmail.com</a></li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form reveal">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Neelam Latif. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+ 

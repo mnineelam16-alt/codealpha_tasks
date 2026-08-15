@@ -1,0 +1,21 @@
+Neelam Latif
+Software Development & Mobile App Enthusiast
+
+Profile
+A computer science student focused on software development, mobile app creation, and practical problem solving. Interested in building user-friendly digital experiences through clean code and thoughtful design.
+
+Skills
+Flutter, Dart, Android Studio, OOP, OOD, AI, PHP, XAMPP, MySQL, Firebase, Git
+
+Education
+BS Computer Science
+CGPA: 3.55/4.0
+Semester: 6 Completed
+
+Projects
+- Habit Tracker App: Flutter-based mobile app for daily routines, reminders, and streak tracking.
+- Student Management System: PHP and MySQL project for student records and academic data handling.
+- Study Planner App: Flutter app focused on task scheduling and weekly planning.
+
+Contact
+Email: latifneelam26@gmail.com
